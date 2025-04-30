@@ -6,7 +6,9 @@
     <title>나의 til</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/banner.css" />
   </head>
+
   <body>
     <!-- 전체 레이아웃  -->
     <div class="wrap">
@@ -26,8 +28,16 @@
               <div class="search">
                 <!-- 제품 검색 API 연동 -->
                 <form class="search_form">
-                  <input class="search_form_word" type="text" placeholder="제품을 검색해 주세요." />
-                  <input class="search_form_button" type="submit" value="검색" />
+                  <input
+                    class="search_form_word"
+                    type="text"
+                    placeholder="제품을 검색해 주세요."
+                  />
+                  <input
+                    class="search_form_button"
+                    type="submit"
+                    value="검색"
+                  />
                 </form>
               </div>
             </div>
@@ -42,7 +52,7 @@
           <div class="header_bottom">
             <div class="header_bottom_nav">
               <ul class="nav">
-                <li><a href="#">홈</a></li>
+                <li><a href="#" class ="focus">홈</a></li>
                 <li><a href="#">투어</a></li>
                 <li><a href="#">티켓</a></li>
               </ul>
@@ -81,15 +91,17 @@
         <div class="layout">
           <!-- Banner -->
           <div class="banner">
-            <div class="banner_list">
-              <a href="#">
-                <img src="images/v1.png" alt="banner" title="배너" />
-              </a>
-            </div>
-            <div class="banner_list">
-              <a href="#">
-                <img src="images/v2.jpg" alt="banner2" title="배너2" />
-              </a>
+            <div class="banner_slide">
+              <div class="banner_list">
+                <a href="#">
+                  <img src="images/v1.png" alt="banner" title="배너" />
+                </a>
+              </div>
+              <div class="banner_list">
+                <a href="#">
+                  <img src="images/v2.jpg" alt="banner2" title="배너2" />
+                </a>
+              </div> 
             </div>
             <button class="slide_bt banner_left">
               <img src="images/slider_arrow.svg" alt="left" title="left" />

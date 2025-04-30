@@ -216,7 +216,7 @@ body {
 div {
   background-color: yellowgreen;
 }
-/* 아래에 작성했으므로 덮어씌움 */
+/* 아래에 작성했으므로 덮어쒸움 */
 div {
   background-color: orange;
 }
@@ -249,19 +249,19 @@ div {
 
 - 5번 `아이디는 최우선권을 가진다`
 
-```css
+```html
 <style>
-      #gogo {
-        background-color: brown;
-      }
-      .box_wrap {
-        background-color: hotpink;
-      }
-      .hi {
-        background-color: yellowgreen;
-      }
-    </style>
-    <div id="gogo" class="hi box_wrap">안녕</div>
+  #gogo {
+    background-color: brown;
+  }
+  .box_wrap {
+    background-color: hotpink;
+  }
+  .hi {
+    background-color: yellowgreen;
+  }
+</style>
+<div id="gogo" class="hi box_wrap">안녕</div>
 ```
 
 - 6번 `단계 선택이 범위선택 보다 우선권 가짐`
@@ -292,7 +292,7 @@ div {
   }
 </style>
 
-<div style="background-color: green;">안녕</div>
+<div style="background-color: green">안녕</div>
 ```
 
 ### 5.3. 우선 순위 정리
@@ -300,14 +300,14 @@ div {
 - 작성 순서를 고려함.
   `태그 < 클래스 < 아이디 < 인라인`
 - 랜더링 과정을 고려함.
-  `태그 => 태그 구조(DOM) => 태그 css => 클래스 css => 인라인 css`
-- 웹 브라우저의 F12 을 참조하자.
-- `!important` 는 정말 해결이 필요한 곳에만 활용.
+  `태그 ==> 태그 구조(DOM) ==> 태그 css ==> 클래스 css ==> 인라인 css`
+- 웹브라우저의 `F12` 을 참조하자.
+- `!important` 는 정말 해결이 필요한 곳에만 활용
 
 ## 6. 글꼴 설정
 
 - 반드시 글꼴 설정 후 작업이 진행 되어야 합니다.
-- 글자의 종류와 글자 간의 간격, 행 간의 간격, 글꼴의 크기 등이 너비, 높이 등의 단위가 됩니다.
+- 글자의 종류와 글자 간의 간격, 행간의 간격, 글꼴의 크기 등이 너비, 높이 등의 단위가 됩니다.
 - body 셋팅을 위한 자료임.
 
 ### 6.1. 글꼴 구하기
@@ -316,7 +316,7 @@ div {
 - [구글폰트](https://fonts.google.com/)
 - [눈누](https://noonnu.cc/font_page/pick)
 - [깃허브](https://github.com/orioncactus/pretendard)
-- [아이콘폰트](https://fontawesome.com/icons)
+- [아이콘 폰트](https://fontawesome.com/icons)
 
 ### 6.2. 글꼴 활용하기
 
@@ -326,4 +326,30 @@ div {
 
 - margin (영역 바깥으로의 여백)
   - margin-top 은 오류가 발생할 수 있습니다.
-  
+
+  ## position 을  꼭 기억하자.
+
+### 1. 내가 정확하게 px 로 위치를 지정하고 싶다.
+
+-아래처럼 할 때 정말 주의하세요.
+- 바깥 영역에 `position: relative` 가 있어야 해요.
+
+```css
+position: absolute;
+left: 0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```
+
+### 2. 내가 웹 브라우저에 특정 위치를 고정하고 싶다.
+
+
+```css
+position: fixed;
+left: 0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```
+
