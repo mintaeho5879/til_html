@@ -33,7 +33,7 @@
 }
 .banner_left {
   left: 0;
-  transform: translateX(-50%) translateY(-50%) rotatey(180deg);
+  transform: translateX(-50%) translateY(-50%) rotateY(180deg);
 }
 .banner_right {
   right: 0;
