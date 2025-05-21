@@ -2,7 +2,7 @@
   margin-top: 65px;
 }
 .section_top {
-    padding-bottom: 22px;
+  padding-bottom: 22px;
 }
 .section_title {
   text-align: center;
@@ -10,7 +10,7 @@
   font-weight: 700;
 }
 .section_desc {
-  display : block;
+  display: block;
   text-align: center;
   font-size: 18px;
   font-weight: 300;
@@ -34,9 +34,11 @@
   background-color: #ffffff;
   padding: 15px 20px;
   border-radius: 52px;
-  curser: pointer;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 400;
+
+  transition: all 0.4s;
 }
 .section_category_bts > li > button.cate_focus {
   border: 1px solid #333333;
@@ -56,8 +58,6 @@
   border-radius: 10px;
 }
 .item > a {
-}
-.item > a > img {
 }
 .item_image {
   width: 100%;
@@ -102,7 +102,7 @@
   display: block;
   font-size: 14px;
   font-weight: 400;
-  color: #333333;
+  color: #333;
   /* 줄내림 방지 */
   white-space: nowrap;
   /* 말줄임 처리 */
@@ -123,16 +123,14 @@
 }
 .section_bts > a {
   border: 1px solid #e5e5e5;
-  padding: 20px 40px;
-  border-radius: 40px;
+  padding: 20px;
   background-color: #fff;
   font-size: 16px;
   font-weight: 700;
-  
   display: flex;
   align-items: center;
   gap: 5px;
 }
 .section_bts > a > img {
-    transform: translateY(1px);
+  transform: translateY(1px);
 }

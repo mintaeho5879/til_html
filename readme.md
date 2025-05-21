@@ -156,6 +156,6 @@ window.addEventListener("DOMContentLoaded", function () {
 ## 슬라이드 외부 라이브러리 활용하기
 
 - 절대로 직접 만들지 마세요.
-- `Swiper`
-- `Slick`
-- `bxSlide`
+- `Swiper` : 가장 추천
+- `Slick` : 추천
+- `bxSlide` : 비추천
